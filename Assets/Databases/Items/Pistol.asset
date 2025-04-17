@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb897bcbe240a6347baefbb22ee2f9f3, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  itemId: 4
+  itemName: Pistol
+  itemIcon: {fileID: 21300000, guid: 5d2123d36580eed49aab5433f29dd2c5, type: 3}
+  isHoldable: 1
+  swingCost: 20
+  shoots: 1
+  prefab: {fileID: 8977663404110481978, guid: b685c3ddfb1a5a84aaad5466b8c0c3c4, type: 3}
+  holdPrefab: {fileID: 3613095109287412251, guid: 5334f49033113dc43b1cbe6900991fb3, type: 3}
+  ammountPerSlot: 1
+  xsize: 2
+  ysize: 2
+  unique: 1
