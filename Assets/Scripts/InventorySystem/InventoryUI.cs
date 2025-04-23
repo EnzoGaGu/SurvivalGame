@@ -34,10 +34,6 @@ public class InventoryUI : MonoBehaviour
 
         playerContainerId = InventoryManager.Instance.playerContainer.containerId;
         StartInventoryUI(InventoryManager.Instance.playerContainer.inventoryGrid, InventoryManager.Instance.rowSize, playerContainerId);
-        //UpdateHotbarUI();
-
-        // The background item for the inventoryPanel gets refreshed to readjust to inventory size
-        LayoutRebuilder.ForceRebuildLayoutImmediate(InventoryPanel.parent.GetComponent<RectTransform>());
     }
 
     public void StartInventoryUI(List<List<int>> inventoryGrid, int rowSize, string containerId)
@@ -101,6 +97,9 @@ public class InventoryUI : MonoBehaviour
 
             }
         }
+
+        // The background item for the inventoryPanel gets refreshed to readjust to inventory size
+        StartCoroutine(UpdateInventoryBackground());
     }
 
     public void UpdateInventoryUI(ItemPosition itemPosition)
@@ -132,7 +131,7 @@ public class InventoryUI : MonoBehaviour
                 }
             }
         }
-        LayoutRebuilder.ForceRebuildLayoutImmediate(InventoryPanel.parent.GetComponent<RectTransform>());
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(InventoryPanel.parent.GetComponent<RectTransform>());
 
     }
 
@@ -201,5 +200,11 @@ public class InventoryUI : MonoBehaviour
             UnityEngine.Debug.Log($"Slot: {slot} in container: {containerid}");
             return slot;
         }
+    }
+
+    IEnumerator UpdateInventoryBackground()
+    {
+        yield return new WaitForSeconds(1f);
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(InventoryPanel.parent.GetComponent<RectTransform>());
     }
 }

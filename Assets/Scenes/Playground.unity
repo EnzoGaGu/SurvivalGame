@@ -9524,6 +9524,10 @@ PrefabInstance:
       propertyPath: inventorySize
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1282810027308238567, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: inventoryRowSize
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1747302660908166352, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
       propertyPath: m_DefaultControlScheme
       value: KeyboardMouse

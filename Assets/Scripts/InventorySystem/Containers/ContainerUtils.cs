@@ -23,7 +23,7 @@ public static class ContainerUtils
 
                 // Remove both items from their respective spaces in the grid
                 updates.Add(InventoryUtils.RemoveItemFromMatrix(fromContainer.inventoryGrid, fromItem, fromContainer.containerId));
-                updates.Add(InventoryUtils.RemoveItemFromMatrix(toContainer.inventoryGrid, toItem, fromContainer.containerId));
+                updates.Add(InventoryUtils.RemoveItemFromMatrix(toContainer.inventoryGrid, toItem, toContainer.containerId));
 
                 bool firstSpaceEmpty = false;
                 bool secondSpaceEmpty = false;
@@ -33,14 +33,19 @@ public static class ContainerUtils
                     int toY = toPosition.Value.y;
 
                     //Check if, after removing both items, the spaces to position them on their new slots are empty
-                    if (InventoryUtils.CheckFreeSpace(fromContainer.inventoryGrid, fromContainer.rowSize, toX, toY, fromItem.item.xsize, fromItem.item.ysize, fromItem.orientation, -1))
+                    if (InventoryUtils.CheckFreeSpace(fromContainer.inventoryGrid, fromContainer.rowSize, fromX, fromY, toItem.item.xsize, toItem.item.ysize, toItem.orientation, -1))
                     {
                         firstSpaceEmpty = true;
                     }
-                    if (InventoryUtils.CheckFreeSpace(toContainer.inventoryGrid, toContainer.rowSize, fromX, fromY, toItem.item.xsize, toItem.item.ysize, toItem.orientation, -1))
+                    if (InventoryUtils.CheckFreeSpace(toContainer.inventoryGrid, toContainer.rowSize, toX, toY, fromItem.item.xsize, fromItem.item.ysize, fromItem.orientation, -1))
                     {
                         secondSpaceEmpty = true;
                     }
+
+                    UnityEngine.Debug.Log($"From container: ");
+                    InventoryUtils.WriteMatrix(fromContainer.inventoryGrid);
+                    UnityEngine.Debug.Log($"To container: ");
+                    InventoryUtils.WriteMatrix(toContainer.inventoryGrid);
 
                     //If both spaces are empty, add the items to their new slots
                     if (firstSpaceEmpty && secondSpaceEmpty)
@@ -49,6 +54,7 @@ public static class ContainerUtils
                         if (InventoryUtils.CheckFreeSpace(fromContainer.inventoryGrid, fromContainer.rowSize, fromX, fromY, toItem.item.xsize, toItem.item.ysize, toItem.orientation, -1))
                         {
                             updates.Add(InventoryUtils.addItemToMatrix(fromContainer.inventoryGrid, new ItemPosition(fromX, fromY, toItem.orientation, toItem.item.xsize, toItem.item.ysize, toInstanceId, fromContainer.containerId)));
+                            UnityEngine.Debug.Log("Both spaces are empty, items swapped successfully");
                         }
                         else
                         {

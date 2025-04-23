@@ -87,11 +87,11 @@ public class Container : MonoBehaviour
         {
             inventoryToggle.ToggleInventory(context); // Open the inventory
 
+            inventoryUI.StartInventoryUI(containerData.inventoryGrid, containerData.rowSize, containerId); // Start the inventory UI
+
             inventoryToggle.inventoryPanel.transform.Find("Inventory_Panel/Container_Side").gameObject.SetActive(true); // Show the container side of the inventory
             inventoryToggle.inventoryPanel.transform.Find("Inventory_Panel/Container_Side/Container_Name").GetComponent<TMPro.TextMeshProUGUI>().text = containerData.containerName; // Set the container name
             inventoryToggle.currentContainer = containerId; // Set the current container
-
-            inventoryUI.StartInventoryUI(containerData.inventoryGrid, containerData.rowSize, containerId); // Start the inventory UI
         }
     }
 }

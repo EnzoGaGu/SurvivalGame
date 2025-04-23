@@ -40,7 +40,6 @@ public class InventoryToggle : MonoBehaviour
             firstPersonController.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            inventoryPanel.transform.Find("Inventory_Panel/Container_Side").gameObject.SetActive(true); // Show the container side of the inventory
         }
     }
 }

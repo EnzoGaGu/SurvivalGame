@@ -198,7 +198,7 @@ public static class InventoryUtils
             {
                 if (x + i >= rowSize || y + j >= inventoryGrid.Count)
                 {
-                    UnityEngine.Debug.Log($"Out of bounds at: {x + i}, {y + j}");
+                    UnityEngine.Debug.Log($"Out of bounds at: {x + i}, {y + j}. RowSize = {rowSize}");
                     return false;
                 }
                 if (inventoryGrid[y + j][x + i] != -1 && inventoryGrid[y + j][x + i] != instanceId)
@@ -256,6 +256,7 @@ public static class InventoryUtils
                     inventoryGrid[y + j][x + i] = -1;
                 }
             }
+            UnityEngine.Debug.Log($"Item {itemStacked.instanceId} removed from grid at position ({x}, {y})");
             return new ItemPosition(x, y, itemStacked.orientation, xSize, ySize, -1, containerId);
         }
         return new ItemPosition(-1); 

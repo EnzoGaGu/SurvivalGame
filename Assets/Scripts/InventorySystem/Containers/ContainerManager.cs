@@ -76,25 +76,48 @@ public class ContainerManager
             ItemStack fromItem = fromContainer.itemStack.Find(item => item.instanceId == fromInstanceId);
             ItemStack toItem = toContainer.itemStack.Find(item => item.instanceId == toInstanceId);
 
+            InventoryManager.Instance.RemoveFromHotbarIfDropped(fromItem.instanceId); // If the item is in the hotbar, remove it from there
 
-            if(toItem.instanceId != -1)
+            if (toItem.instanceId != -1)
             {
-            fromContainer.itemStack.Add(new ItemStack(toInstanceId, toItem.item, toItem.orientation, 1)); // Add the item to the container
-            }
-            toContainer.itemStack.Add(new ItemStack(fromInstanceId, fromItem.item, fromItem.orientation, 1)); // Add the item to the container
 
+                fromContainer.itemStack.Add(new ItemStack(toInstanceId, toItem.item, toItem.orientation, 1)); // Add the item to the container
+
+            }
+
+            toContainer.itemStack.Add(new ItemStack(fromInstanceId, fromItem.item, fromItem.orientation, 1)); // Add the item to the container
+            
             foreach (ItemPosition update in updates)
             {
                 inventoryUI.UpdateInventoryUI(update); // Update the inventory UI for the item position
-                UnityEngine.Debug.Log($"Swapping items: {fromItem.item.name} (ID: {fromItem.instanceId}) with {toItem.item.name} (ID: {toItem.instanceId})");
+                /*UnityEngine.Debug.Log($"Swapping items: {fromItem.item.name} (ID: {fromItem.instanceId}) with {toItem.item.name} (ID: {toItem.instanceId})");
+                
+                UnityEngine.Debug.Log($"From container: ");
+                InventoryUtils.WriteMatrix(fromContainer.inventoryGrid);
+                UnityEngine.Debug.Log($"To container: ");
+                InventoryUtils.WriteMatrix(toContainer.inventoryGrid);*/
             }
 
-            fromContainer.itemStack.Remove(fromItem); // Remove the item from the container
-
-            if(toItem.instanceId != -1)
+            if (toItem.instanceId != -1)
             {
-                toContainer.itemStack.Remove(toItem); // Remove the item from the container
+                if (InventoryUtils.FindItemPositionInGrid(toContainer.inventoryGrid, toItem.instanceId) == null)
+                {
+                    toContainer.itemStack.Remove(toItem); // Remove the item from the container   
+                }
+                else
+                {
+                    toContainer.itemStack.Remove(fromItem);
+                }
             }
+            if (InventoryUtils.FindItemPositionInGrid(fromContainer.inventoryGrid, fromItem.instanceId) == null)
+            {
+                fromContainer.itemStack.Remove(fromItem); // Remove the item from the container
+            }
+            else
+            {
+                fromContainer.itemStack.Remove(toItem);
+            }
+
         }
         else
         {

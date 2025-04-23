@@ -117,22 +117,7 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            if (hotbar.hotbarItems.Contains(itemStacked))
-            {
-                int position = hotbar.hotbarItems.IndexOf(itemStacked);
-
-                int hotbarSize = playerStats.hotbarSize;
-
-
-                if (position >= 0 && position < hotbarSize)
-                {
-                    hotbar.RemoveFromHotbar(position);
-                }
-                else
-                {
-                    UnityEngine.Debug.LogError($"Invalid position: {position}. It must be between 0 and {hotbarSize - 1}.");
-                }
-            }
+            RemoveFromHotbarIfDropped(itemStacked.instanceId); // Remove the item from the hotbar if it's dropped
 
 
             ItemPosition itemPosition = InventoryUtils.RemoveItemFromMatrix(inventoryGrid, itemStacked, playerContainer.containerId);
@@ -159,6 +144,27 @@ public class InventoryManager : MonoBehaviour
             {
                 inventoryUI.UpdateInventoryUI(itemPosition); // Update the inventory UI
                 InventoryUtils.WriteMatrix(inventoryGrid);
+            }
+        }
+    }
+
+    public void RemoveFromHotbarIfDropped(int instanceId)
+    {
+        ItemStack itemStacked = itemStack.Find(item => item.instanceId == instanceId);
+        if (itemStacked != null)
+        {
+            if (hotbar.hotbarItems.Contains(itemStacked))
+            {
+                int position = hotbar.hotbarItems.IndexOf(itemStacked);
+                int hotbarSize = playerStats.hotbarSize;
+                if (position >= 0 && position < hotbarSize)
+                {
+                    hotbar.RemoveFromHotbar(position);
+                }
+                else
+                {
+                    UnityEngine.Debug.LogError($"Invalid position: {position}. It must be between 0 and {hotbarSize - 1}.");
+                }
             }
         }
     }
