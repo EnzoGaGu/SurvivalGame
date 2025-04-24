@@ -179,8 +179,7 @@ public static class InventoryUtils
         // If the pointer went through every inventory slot without finding a space that passes all the requirements, return null
         return new ItemPosition(-1, -1, -1);
     }
-    
-    
+   
 
     public static bool CheckFreeSpace(List<List<int>> inventoryGrid, int rowSize, int x, int y, int xsize, int ysize, int orientation, int instanceId)
     {

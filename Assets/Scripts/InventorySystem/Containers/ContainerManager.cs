@@ -81,11 +81,11 @@ public class ContainerManager
             if (toItem.instanceId != -1)
             {
 
-                fromContainer.itemStack.Add(new ItemStack(toInstanceId, toItem.item, toItem.orientation, 1)); // Add the item to the container
+                fromContainer.itemStack.Add(new ItemStack(toInstanceId, toItem.item, toItem.orientation, toItem.ammount)); // Add the item to the container
 
             }
 
-            toContainer.itemStack.Add(new ItemStack(fromInstanceId, fromItem.item, fromItem.orientation, 1)); // Add the item to the container
+            toContainer.itemStack.Add(new ItemStack(fromInstanceId, fromItem.item, fromItem.orientation, fromItem.ammount)); // Add the item to the container
             
             foreach (ItemPosition update in updates)
             {

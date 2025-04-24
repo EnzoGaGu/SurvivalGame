@@ -126,6 +126,7 @@ public class InventoryManager : MonoBehaviour
         }
         InventoryUtils.WriteMatrix(inventoryGrid);
 
+
     }
 
     public void MoveItem(int fromInstanceId, int toInstanceId, int xToPosition, int yToPosition)

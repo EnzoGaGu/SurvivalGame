@@ -2,7 +2,7 @@
 - Project name: SurvivalTest
 - Unity version: Unity 6000.0.42f1
 - Active game object:
-  - Name: PlayerCapsule
-  - Tag: Player
-  - Layer: Player
+  - Name: Zombie(Clone)
+  - Tag: Untagged
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

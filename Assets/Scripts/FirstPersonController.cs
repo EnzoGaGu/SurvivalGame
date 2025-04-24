@@ -12,28 +12,38 @@ namespace StarterAssets
 	public class FirstPersonController : MonoBehaviour
 	{
 		[Header("Player")]
-		[Tooltip("Move speed of the character in m/s")]
+        [Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 6.0f;
-		[Tooltip("Rotation speed of the character")]
+		[Tooltip("Maximum time for reaching max speed")]
+		public float MaxRunTime = 2.0f;
+        [Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+        [Tooltip("Running speed curve")]
+        public AnimationCurve runSpeedCurve;
 
-		[Space(10)]
+        [Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
 		public float Gravity = -15.0f;
+        [Tooltip("Multiplier for movement while in air")]
+        public float AirControlMultiplier = 0.3f;
+		[Tooltip("Maximum speed jump boost possible")]
+		public float MaxBoost = 2f; 
+        [Tooltip("Jump boost curve")]
+        public AnimationCurve JumpBoostCurve;
 
-		[Space(10)]
+        [Space(10)]
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
 		public float JumpTimeout = 0.1f;
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
 		public float FallTimeout = 0.15f;
 
-		[Header("Player Grounded")]
+        [Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		public bool Grounded = true;
 		[Tooltip("Useful for rough ground")]
@@ -55,13 +65,15 @@ namespace StarterAssets
 		private float _cinemachineTargetPitch;
 
 		// player
-		private float _speed;
+		[SerializeField] private float _speed;
+		private float _runTime; 
 		private float _rotationVelocity;
 		private float _verticalVelocity;
 		private float _terminalVelocity = 53.0f;
+        private Vector3 _lastMoveDirection;
 
-		// timeout deltatime
-		private float _jumpTimeoutDelta;
+        // timeout deltatime
+        private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
 	
@@ -162,18 +174,24 @@ namespace StarterAssets
 			// if there is no input, set the target speed to 0
 			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
 
-			// a reference to the players current horizontal velocity
-			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
+
+            // a reference to the players current horizontal velocity
+            float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
 
 			float speedOffset = 0.1f;
 			float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
 
-			// accelerate or decelerate to target speed
-			if (currentHorizontalSpeed < targetSpeed - speedOffset || currentHorizontalSpeed > targetSpeed + speedOffset)
+            
+
+            float speedLerp = _input.sprint ? runSpeedCurve.Evaluate(_runTime / MaxRunTime) : runSpeedCurve.Evaluate(1f-(_runTime/MaxRunTime));
+
+
+            // accelerate or decelerate to target speed
+            if (currentHorizontalSpeed < targetSpeed - speedOffset || currentHorizontalSpeed > targetSpeed + speedOffset)
 			{
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
-				_speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude, Time.deltaTime * SpeedChangeRate);
+				_speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude, Time.deltaTime * SpeedChangeRate * speedLerp);
 
 				// round speed to 3 decimal places
 				_speed = Mathf.Round(_speed * 1000f) / 1000f;
@@ -192,10 +210,32 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+            }
+
+			if(_input.sprint && _input.move != Vector2.zero)
+			{
+                _runTime += Time.deltaTime;
+			}
+			else
+			{
+				_runTime = 0f; 
 			}
 
-			// move the player
-			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+				// Clamp run time to max run time
+				_runTime = Mathf.Min(_runTime, MaxRunTime);
+
+            if (Grounded && inputDirection != Vector3.zero)
+			{
+				_lastMoveDirection = inputDirection;
+			}
+
+            if (!Grounded)
+            {
+                inputDirection = Vector3.Lerp(_lastMoveDirection, inputDirection, AirControlMultiplier);
+            }
+
+            // move the player
+            _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
 
 		private void JumpAndGravity()
@@ -216,6 +256,18 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+                    // If player is moving, add a boost to the jump
+                    if (_input.move != Vector2.zero)
+                    {
+                        Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
+                        inputDirection = transform.right * inputDirection.x + transform.forward * inputDirection.z;
+
+                        // If the player is sprinting, add a bigger boost
+                        float horizontalBoost = (_input.sprint && _input.move != Vector2.zero) ? 2f : 1.5f;
+                        Vector3 boost = inputDirection * (_speed * (horizontalBoost - 1f));
+                        _controller.Move(boost * Time.deltaTime);
+                    }
                 }
 
 				// jump timeout

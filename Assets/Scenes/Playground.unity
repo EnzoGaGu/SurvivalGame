@@ -9668,6 +9668,46 @@ PrefabInstance:
       propertyPath: pushLayers.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: Gravity
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: JumpHeight
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: MaxRunTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: FallTimeout
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: SpeedChangeRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: runSpeedCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: runSpeedCurve.m_Curve.Array.data[1].time
+      value: 0.5041809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: runSpeedCurve.m_Curve.Array.data[1].value
+      value: 0.9952812
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: runSpeedCurve.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428987831321694897, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
+      propertyPath: runSpeedCurve.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9100341819157281267, guid: da42df90f5c4007478622bf2b18c758b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27

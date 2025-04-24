@@ -19,6 +19,7 @@ public class InventorySlot : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     public int yPosition; // The y position of the item in the inventory grid
     [SerializeField] private GameObject draggablePrefab;
     private InputAction selectPositionAction; // Select hotbar position action
+    private InputAction secondaryAction; // Secondary action (for rotating items, or adding them to a new stack)
     private InputHandler inputHandler;
     private Hotbar hotbar;
     private InventoryToggle inventoryToggle;
@@ -74,11 +75,18 @@ public class InventorySlot : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
             selectPositionAction.performed += OnSelectPosition;
             selectPositionAction.Enable();
         }
+
+        secondaryAction = inputHandler.LoadInputAction("Player/SecondaryAction");
+        if(secondaryAction != null)
+        {
+            secondaryAction.performed += OnSecondaryAction;
+            secondaryAction.Enable();
+        }
     }
 
     public void onClick()
     {
-        if (instanceId != -1)
+        if (instanceId != -1 && containerData.containerId.StartsWith("Player_"))
         {
             InventoryManager.Instance.DropItem(instanceId);
         }
@@ -177,6 +185,15 @@ public class InventorySlot : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
             }
         }
 
+    }
+
+    public void OnSecondaryAction(InputAction.CallbackContext context)
+    {
+        if (context.performed && draggable != null && itemId != -1 && inventoryToggle.isInventoryOpen) // If the secondary action is performed and the mouse is over the inventory slot
+        {
+            ItemStack itemStack = ContainerManager.Instance.GetContainer(containerData.containerId).itemStack.Find(i => i.instanceId == instanceId); // Get the item stack from the container data
+            itemStack.orientation = itemStack.orientation == 0 ? 1 : 0; // Change the orientation of the item stack
+        }
     }
 
     public void itemAmmountIsVisible()
