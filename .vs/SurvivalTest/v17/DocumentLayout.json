@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "E:\\UnityProjects\\SurvivalTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Obstacles\\ZombieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemStack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\ItemStack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\InventoryManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\FirstPersonController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\FirstPersonController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +31,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\InventorySlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\InventoryManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\InventoryUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\Containers\\ContainerUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryToggle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\ItemPickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemStack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\ItemStack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerItemTemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\InventorySystem\\Containers\\ContainerItemTemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -133,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\PlayerDetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Obstacles\\PlayerDetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Obstacles\\ZombieController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,8 +145,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 98,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 237,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -156,11 +156,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryManager.cs",
               "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryManager.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAF4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T12:48:04.934Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -169,30 +168,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "InventoryUI.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAAAHoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T13:22:02.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InventoryToggle.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T17:10:20.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ContainerUtils.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerUtils.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerUtils.cs",
@@ -200,12 +175,11 @@
               "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:46:04.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T18:46:04.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SaveSystem.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\SaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SaveSystem.cs",
@@ -217,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ItemPosition.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemPosition.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemPosition.cs",
@@ -229,43 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ContainerDatabase.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:12:31.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HotbarSlot.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T11:19:07.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ItemUtils.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:47:09.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 2,
               "Title": "ItemStack.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemStack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemStack.cs",
@@ -277,7 +215,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
+              "Title": "ZombieController.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\ZombieController.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\ZombieController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T17:34:16.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryToggle.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryToggle.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:10:20.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryUI.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAHoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T13:22:02.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ContainerDatabase.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T13:12:31.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HotbarSlot.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\HotbarSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T11:19:07.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ItemUtils.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\ItemUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:47:09.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "ContainerItemTemplate.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerItemTemplate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerItemTemplate.cs",
@@ -289,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ItemDatabase.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemDatabase.cs",
@@ -301,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Item.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Item.cs",
@@ -313,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ItemPickup.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\ItemPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\ItemPickup.cs",
@@ -325,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "StaminaBar.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Player\\StaminaBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StaminaBar.cs",
@@ -337,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "HealthBar.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Player\\HealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\HealthBar.cs",
@@ -349,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "DamageTrigger.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\DamageTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\DamageTrigger.cs",
@@ -361,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "PromptController.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\PromptController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\PromptController.cs",
@@ -373,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "StaminaController.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Player\\StaminaController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StaminaController.cs",
@@ -385,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "HoldingItem.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\ItemHoldingSystem\\HoldingItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemHoldingSystem\\HoldingItem.cs",
@@ -397,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Shoot.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\ItemHoldingSystem\\Shoot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemHoldingSystem\\Shoot.cs",
@@ -409,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "EnemyStats.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\EnemyStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\EnemyStats.cs",
@@ -421,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "PlayerDetection.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\PlayerDetection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\PlayerDetection.cs",
@@ -430,66 +441,28 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T17:34:20.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ZombieController.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\ZombieController.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Obstacles\\ZombieController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Obstacles\\ZombieController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T17:34:16.776Z"
             }
           ]
         },
         {
-          "DockedWidth": 360,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 221,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StarterAssetsInputs.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T12:50:09.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FirstPersonController.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\FirstPersonController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FirstPersonController.cs",
               "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\FirstPersonController.cs",
               "RelativeToolTip": "Assets\\Scripts\\FirstPersonController.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAUwNwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwHIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T12:49:38.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T12:49:38.004Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TransferDirectionEnum.cs",
-              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
-              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T17:13:08.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "InventoryUtils.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventoryUtils.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventoryUtils.cs",
@@ -497,24 +470,23 @@
               "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventoryUtils.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAGkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:44:52.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T18:44:52.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ContainerManager.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs",
               "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerManager.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAFwAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T12:46:43.417Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ContainerData.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\ContainerData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\ContainerData.cs",
@@ -526,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Container.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\Container.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\Container.cs",
@@ -538,20 +510,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "InventorySlot.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
               "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\InventorySlot.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAawFAAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAewH4AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T13:40:57.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
+              "Title": "TransferDirectionEnum.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventorySystem\\Containers\\TransferDirectionEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T17:13:08.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StarterAssetsInputs.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
+              "ToolTip": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InputSystem\\StarterAssetsInputs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T12:50:09.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Hotbar.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\InventorySystem\\Hotbar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySystem\\Hotbar.cs",
@@ -563,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PlayerStats.cs",
               "DocumentMoniker": "E:\\UnityProjects\\SurvivalTest\\Assets\\Scripts\\Player\\PlayerStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
