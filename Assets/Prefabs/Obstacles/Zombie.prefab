@@ -60,9 +60,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38302222
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17860618
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.82139385
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.38302222
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -130
+      objectReference: {fileID: 0}
+    - target: {fileID: -7028262269891582284, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38302222
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.17860618
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.82139385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38302222
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780944662418328221, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: d3ad186d161fc65439a36864a1d26189, type: 3}
       propertyPath: m_Controller
@@ -310,10 +362,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0012823696
-  m_Height: 0.0042745653
+  m_Radius: 0.00083657814
+  m_Height: 0.003955397
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.0021372826}
+  m_Center: {x: 0.00024378748, y: 0, z: -0.0018711752}
 --- !u!54 &7870497363586390833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -322,7 +374,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973458969982430252}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -411,10 +463,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0013009975
-  m_Height: 0.004336658
+  m_Radius: 0.00083657814
+  m_Height: 0.003955397
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.002168329}
+  m_Center: {x: 0.00024378748, y: 0, z: -0.0018711752}
 --- !u!54 &1380871063778751355
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -423,7 +475,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2504983182609533750}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -512,7 +564,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.004556303, y: 0.0042045997, z: 0.0036941175}
+  m_Size: {x: 0.004556303, y: 0.0042045997, z: 0.003}
   m_Center: {x: 0.0003390459, y: 0.0021023, z: 0.00047647452}
 --- !u!54 &7300880657319303293
 Rigidbody:
@@ -522,7 +574,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4665430268832236979}
   serializedVersion: 4
-  m_Mass: 2
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -680,8 +732,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0013643947
-  m_Height: 0.0054575787
+  m_Radius: 0.001
+  m_Height: 0.0051
   m_Direction: 1
   m_Center: {x: 0, y: 0.0027287893, z: 0}
 --- !u!54 &9084283844157081768
@@ -781,8 +833,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0009901725
-  m_Height: 0.00396069
+  m_Radius: 0.0008
+  m_Height: 0.0038
   m_Direction: 1
   m_Center: {x: 0, y: 0.001980345, z: 0}
 --- !u!54 &3373448488218865385
@@ -793,7 +845,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6229216173913072789}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -849,7 +901,7 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
+  m_EnableProjection: 1
   m_ProjectionDistance: 0.1
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
@@ -882,8 +934,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.001360155
-  m_Height: 0.00544062
+  m_Radius: 0.001
+  m_Height: 0.0051
   m_Direction: 1
   m_Center: {x: 0, y: 0.00272031, z: 0}
 --- !u!54 &2358659251412410364
@@ -983,8 +1035,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.000979774
-  m_Height: 0.0048988704
+  m_Radius: 0.0008
+  m_Height: 0.0046
   m_Direction: 1
   m_Center: {x: 0, y: 0.0024494352, z: 0}
 --- !u!114 &5424415188030549990
@@ -1007,7 +1059,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6962389832048862743}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1096,8 +1148,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0009793345
-  m_Height: 0.004896672
+  m_Radius: 0.0008
+  m_Height: 0.0046
   m_Direction: 1
   m_Center: {x: 0, y: 0.002448336, z: 0}
 --- !u!114 &3571142186879995141
@@ -1120,7 +1172,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8828631928449348738}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1209,8 +1261,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0009762746
-  m_Height: 0.0039050984
+  m_Radius: 0.0008
+  m_Height: 0.0038
   m_Direction: 1
   m_Center: {x: 0, y: 0.0019525492, z: 0}
 --- !u!54 &2138881303787706479
@@ -1221,7 +1273,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9115634557530359647}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1277,7 +1329,7 @@ CharacterJoint:
     limit: 0
     bounciness: 0
     contactDistance: 0
-  m_EnableProjection: 0
+  m_EnableProjection: 1
   m_ProjectionDistance: 0.1
   m_ProjectionAngle: 180
   m_BreakForce: Infinity
@@ -1310,8 +1362,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.003773631, y: 0.0033229631, z: 0.00391529}
-  m_Center: {x: 0.0009109971, y: 0.0016614806, z: 0.0004762758}
+  m_Size: {x: 0.003773631, y: 0.003, z: 0.003}
+  m_Center: {x: 0, y: 0.0016614806, z: 0.0004762758}
 --- !u!54 &5195400940901853393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1320,7 +1372,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9161770251369012876}
   serializedVersion: 4
-  m_Mass: 2
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

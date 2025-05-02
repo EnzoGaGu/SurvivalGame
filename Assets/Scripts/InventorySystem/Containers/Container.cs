@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Container : MonoBehaviour
+public class Container : MonoBehaviour, IInteractable
 {
     public string containerId; // Unique identifier for the container
     public ContainerData containerData; // Reference to the container data
+
+    public float interactingAngle = 45f; // Angle to interact with the container
 
     public ItemDatabase itemDatabase;
     private InputHandler inputHandler;
@@ -13,6 +15,7 @@ public class Container : MonoBehaviour
 
     private SphereCollider sphereCollider;
     private bool isPlayerInTrigger = false; // Variable to know if the player is in the trigger
+    private bool isTarget = false; 
     private bool isInventoryOpen = false; // Variable to know if the inventory is open
     private InventoryToggle inventoryToggle; // Reference to the inventory toggle script
     private InventoryUI inventoryUI;
@@ -20,7 +23,6 @@ public class Container : MonoBehaviour
     public void Start()
     {
         containerId = gameObject.scene.name + "_" + gameObject.name + "_" + transform.position.ToString(); // Set the container ID (scene name + object name + position)
-
         containerData = ContainerManager.Instance.LoadContainer(containerId); // Load the container data
 
         if (containerData.containerName == "")
@@ -54,6 +56,23 @@ public class Container : MonoBehaviour
         inventoryToggle = FindFirstObjectByType<InventoryToggle>();
     }
 
+    private void Update()
+    {
+        if (isPlayerInTrigger)
+        {
+            InteractionManager.Instance.PlayersObjectiveCandidate(transform, interactingAngle); // Llamar al método para saber si el jugador está mirando al objeto
+
+            if (InteractionManager.Instance.currentObjectiveTransform == transform)
+            {
+                PromptController.Instance.ShowPrompt(transform); // Mostrar el prompt
+                isTarget = true;
+            }
+            else
+            {
+                isTarget = false;
+            }
+        }
+    }
 
 
     private void OnTriggerEnter(Collider other)
@@ -76,14 +95,25 @@ public class Container : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            isTarget = false; 
             isPlayerInTrigger = false;
             inventoryToggle.inventoryPanel.transform.Find("Inventory_Panel/Container_Side").gameObject.SetActive(false); // Show the container side of the inventory
+
+            if (InteractionManager.Instance.currentObjectiveTransform == transform)
+            {
+                PromptController.Instance.HidePrompt();
+            }
         }
+    }
+
+    public string GetPromptText()
+    {
+        return $"E to open {containerData.containerName}"; // Return the container name
     }
 
     private void OnInteract(InputAction.CallbackContext context)
     {
-        if (isPlayerInTrigger)
+        if (isPlayerInTrigger && isTarget && PromptController.Instance.target == transform)
         {
             inventoryToggle.ToggleInventory(context); // Open the inventory
 

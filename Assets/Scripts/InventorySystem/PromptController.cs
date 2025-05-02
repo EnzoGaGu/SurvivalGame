@@ -1,10 +1,12 @@
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
+using TMPro;
 
 public class PromptController : MonoBehaviour
 {
     public static PromptController Instance { get; private set; }
+
     public Transform target; // El objetivo a seguir
     public float distance = 0.5f; // Distancia del prompt al objetivo
     public float height = 0.5f; //Altura del prompt
@@ -48,12 +50,23 @@ public class PromptController : MonoBehaviour
             transform.LookAt(playerTransform);
             transform.Rotate(0, 180, 0);
         }
+
     }
 
     public void ShowPrompt(Transform target)
     {
-        this.target = target; 
+        this.target = target;
         gameObject.SetActive(true);
+
+        IInteractable interactable = target.GetComponent<IInteractable>();
+
+        TMP_Text textComponent = GetComponent<TMP_Text>();
+
+        if (interactable != null)
+        {
+            textComponent.text = interactable.GetPromptText();
+        }
+
         //UnityEngine.Debug.Log("Prompt shown");
     }
 

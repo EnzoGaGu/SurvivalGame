@@ -38,11 +38,13 @@ public class EnemyStats : MonoBehaviour
 
     void ActivateRagdoll()
     {
-        GetComponent<Animator>().enabled = false; // Desactiva la animación
+        GetComponent<Animator>().enabled = false; // Desactiva la animaciï¿½n
 
         foreach (Rigidbody rb in GetComponentsInChildren<Rigidbody>())
         {
             rb.isKinematic = false; // Activa el ragdoll
+            rb.linearVelocity = Vector3.zero;      // Eliminar movimiento previo
+            rb.angularVelocity = Vector3.zero; // Eliminar rotaciï¿½n previa
         }
 
         foreach (Collider col in GetComponentsInChildren<Collider>())
