@@ -11,6 +11,14 @@ public class ContainerManager
 
     private InventoryUI inventoryUI;
 
+    public void RegisterContainer(string containerId, ContainerData data)
+    {
+        if (!allContainers.ContainsKey(containerId))
+        {
+            allContainers.Add(containerId, data);
+        }
+    }
+
     public ContainerData LoadContainer(string containerId)
     {
         ContainerData containerData = SaveSystem.LoadContainerData(containerId) ?? new ContainerData();

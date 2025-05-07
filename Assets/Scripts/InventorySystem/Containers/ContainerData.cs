@@ -25,4 +25,16 @@ public class ContainerData
         initiallyFilled = false;
         initialItems = new List<ContainerItemTemplate>();
     }
+
+    public ContainerData(int containerSize, int rowSize)
+    {
+        containerId = "";
+        containerName = "";
+        this.containerSize = containerSize;
+        this.rowSize = rowSize;
+        itemStack = new List<ItemStack>();
+        inventoryGrid = new List<List<int>>();
+        initiallyFilled = false;
+        initialItems = new List<ContainerItemTemplate>();
+    }
 }

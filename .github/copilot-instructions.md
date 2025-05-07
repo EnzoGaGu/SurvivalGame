@@ -2,7 +2,7 @@
 - Project name: SurvivalTest
 - Unity version: Unity 6000.0.42f1
 - Active game object:
-  - Name: ORG-upper_arm.L
+  - Name: Inventory
   - Tag: Untagged
-  - Layer: Default
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
